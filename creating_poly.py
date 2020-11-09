@@ -1,8 +1,6 @@
 # Polynomial Regression
 
 # Importing libraries
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -13,6 +11,8 @@ X = dataset.iloc[:, 1:-1].values
 y = dataset.iloc[:, -1].values
 
 # Training the Polynomial Regression model on the entire dataset
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
 
 # You can set the degree as you wish
 poly_regression = PolynomialFeatures(degree=5)
